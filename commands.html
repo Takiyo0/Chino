@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<meta name='viewport' content="width=device-width, initial-scale=1">
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChilledChino</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-logo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon"
+        href="https://cdn.discordapp.com/avatars/752105298789007472/9d4f43b61a5c5e6c17f785518ff45a9a.webp?size=2048"
+        type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<style>
+    #container {
+        width: inherit;
+        height: inherit;
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+    }
+
+    html,
+    body {
+        user-select: none;
+        animation-name: seizures;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 10s;
+    }
+
+    @keyframes seizures {
+        0% {
+            background-color: #333;
+        }
+
+        50% {
+            background-color: #111;
+        }
+
+        100% {
+            background-color: #333;
+        }
+    }
+
+    footer {
+        background-color: #99aab5;
+        min-height: 156pt;
+        text-align: center;
+        position: relative;
+        margin-top: 18cm;
+    }
+
+    h5.Footer-Title {
+        text-align: center;
+        font-family: 'Ubuntu';
+        font-size: 30px;
+        color: whitesmoke;
+    }
+
+
+
+    .nav li {
+        display: inline-flex;
+        font-size: 20px;
+        user-select: none;
+        text-align: center;
+        padding: 25px;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: center;
+        vertical-align: middle;
+    }
+
+
+    @media only screen and (min-width: 1032px) {
+        .nav {
+            display: flex;
+        }
+    }
+
+    p.html-error {
+        text-align: center;
+        font-family: 'Pacifico';
+        font-size: 210px;
+        color: whitesmoke;
+        margin-top: 2cm;
+    }
+
+    p.page-not-found {
+        text-align: center;
+        font-family: 'Arimo';
+        font-size: 40px;
+        color: whitesmoke;
+        margin-top: 0.5cm;
+    }
+
+    p.back {
+        text-align: center;
+        font-family: 'Arimo';
+        font-size: 20px;
+        color: whitesmoke;
+        margin-top: 0.5cm;
+    }
+
+    p.lmaoo {
+        text-align: center;
+        font-family: 'Arimo';
+        font-size: 10px;
+        color: whitesmoke;
+        margin-top: 0.5cm;
+    }
+
+
+    a {
+        color: #2F56B0;
+        position: relative;
+        text-decoration: none;
+        transition: color .4s ease-out;
+    }
+
+    a:hover {
+        color: #457DFB;
+        right: 0;
+        text-decoration: none;
+    }
+
+    a:hover:after {
+        border-color: #457DFB;
+        right: 0;
+    }
+
+    a:after {
+        border-radius: 1em;
+        border-top: .1em solid #2F56B0;
+        content: "";
+        position: absolute;
+        right: 100%;
+        bottom: .14em;
+        left: 0;
+        transition: right .4s cubic-bezier(0, .5, 0, 1),
+            border-color .4s ease-out;
+    }
+
+    a:hover:after {
+        animation: anchor-underline 2s cubic-bezier(0, .5, 0, 1) infinite;
+        border-color: #457DFB;
+    }
+
+    @keyframes anchor-underline {
+
+        0%,
+        10% {
+            left: 0;
+            right: 100%;
+        }
+
+        40%,
+        60% {
+            left: 0;
+            right: 0;
+        }
+
+        90%,
+        100% {
+            left: 100%;
+            right: 0;
+        }
+    }
+</style>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="dashboard.html">
+            <img src="https://i.imgur.com/76Ov0L3.png" width="146" height="32">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="dashboard.html">
+                Home
+            </a>
+
+            <a class="navbar-item" href="commands.html">
+                Commands
+            </a>
+
+            <a class="navbar-item" href="documentation.html">
+                Documentation
+            </a>
+
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary is-rounded" href='https://top.gg/bot/752105298789007472/vote'
+                        target="_blank">
+                        <strong>Vote Me</strong>
+                    </a>
+                    <a class="button is-light is-rounded"
+                        href='https://discord.com/oauth2/authorize?client_id=752105298789007472&scope=bot&permissions=1479878742'
+                        target="_blank">
+                        Invite Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+</nav>
+
+<body>
+    <p class="html-error"> 404 </p>
+    <p class="page-not-found"> Page not Found </p>
+
+    <p class="back"> 
+        <a href="dashboard.html">Back Home</a> | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Other</a> </p>
+
+        <p class="lmaoo"> Eh, This page actually exists, but I'm still working on it lmao </p>
+</body>
+
+
+
+
+
+<footer id="myFooter">
+    <div class="container">
+        <div class="row">
+
+            <ul class="nav">
+                <li>
+
+                    <div class="col-sm-3">
+                        <h5 class="Footer-Title">Dashboard Page</h5>
+                        <ul>
+                            <a href='dashboard.html'>
+                                <button class="button is-primary is-inverted is-outlined is-centered is-info"
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Main
+                                    Page</button>
+                            </a>
+                            <a href='commands.html'>
+                                <button class="button is-primary is-inverted is-outlined is-centered is-info"
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Commands</button>
+                            </a>
+                            <a href='documentation.html'>
+                                <button class="button is-primary is-inverted is-outlined is-centered is-info"
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Documentation</button>
+                            </a>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+
+                <li>
+
+                    <div class="col-sm-3">
+                        <h5 class="Footer-Title">Support</h5>
+                        <ul>
+                            <a href='https://www.patreon.com/chinobot' target="_blank">
+                                <button class="button is-primary is-inverted is-outlined is-centered is-info"
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Patreon</button>
+                            </a>
+                            <a href='https://saweria.co/chinobot' target="_blank">
+                                <button class="button is-primary is-inverted is-outlined is-centered is-info"
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Saweria</button>
+                            </a>
+                            <a href='https://top.gg/bot/752105298789007472/vote' target="_blank">
+                                <button class="button is-primary is-inverted is-outlined is-centered is-info"
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Vote
+                                    on Top.GG</button>
+                            </a>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+    <div class="second-bar">
+        <div class="container">
+        </div>
+    </div>
+</footer>
