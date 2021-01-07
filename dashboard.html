@@ -18,297 +18,9 @@
   <link rel="icon"
     href="https://cdn.discordapp.com/avatars/752105298789007472/9d4f43b61a5c5e6c17f785518ff45a9a.webp?size=2048"
     type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+  <link href="dashboard.css" rel="stylesheet">
 </head>
-
-<style>
-  #container {
-    width: inherit;
-    height: inherit;
-    margin: 0;
-    padding: 0;
-    background-color: pink;
-  }
-
-  html,
-  body {
-    user-select: none;
-    animation-name: seizures;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 10s;
-  }
-
-  @keyframes seizures {
-    0% {
-      background-color: #333;
-    }
-
-    50% {
-      background-color: #111;
-    }
-
-    100% {
-      background-color: #333;
-    }
-  }
-
-  footer {
-    background-color: #99aab5;
-    min-height: 156pt;
-    text-align: center;
-    position: relative;
-  }
-
-  h1.title {
-    text-align: center;
-    font-family: 'Ubuntu';
-    font-size: 63px;
-    color: whitesmoke;
-    margin-top: 34px;
-  }
-
-  h5.Footer-Title {
-    text-align: center;
-    font-family: 'Ubuntu';
-    font-size: 30px;
-    color: whitesmoke;
-  }
-
-  p.feature {
-    text-align: center;
-    font-family: 'Source Sans Pro';
-    font-size: 32px;
-    margin-top: 100px;
-    color: whitesmoke;
-  }
-
-  p.menu-menu {
-    text-align: center;
-    font-family: 'Source Sans Pro';
-    font-size: 19px;
-    color: black;
-  }
-
-  p.feature-text {
-    text-align: center;
-    font-family: 'Titillium web';
-    font-size: 47px;
-    color: white;
-    margin-top: 43px;
-  }
-
-  p.panel-text {
-    text-align: center;
-    font-family: 'Titillium web';
-    font-size: 42px;
-    color: white;
-    margin-top: 13px;
-  }
-
-  p.category-explanation {
-    text-align: center;
-    font-family: 'Titillium web';
-    margin-left: 4%;
-    margin-right: 4%;
-    color: white;
-  }
-
-  p.made-by {
-    text-align: center;
-    font-family: 'arimo';
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 1cm;
-    color: white;
-  }
-
-  p.inside-box-text {
-    text-align: center;
-    font-family: 'Quicksand';
-    font-size: 37px;
-    color: white;
-    margin-top: 21px;
-  }
-
-  a.avatar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 240px;
-    height: 240px;
-    border-radius: 0.5cm;
-    margin-top: 5px;
-  }
-
-  img.avatar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0.5cm;
-    margin-top: 5px;
-
-  }
-
-  .my-box {
-    width: 570px;
-    height: 500px;
-    background-color: #555;
-    border-radius: 0.7cm;
-    user-select: none;
-    animation-name: boxSeizures;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 10s;
-  }
-
-  @keyframes boxSeizures {
-    0% {
-      background-color: #222830;
-    }
-
-    50% {
-      background-color: #292d33;
-    }
-
-    100% {
-      background-color: #25282d;
-    }
-  }
-
-  div.box {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 320px;
-    height: 180px;
-    margin-top: 5px;
-    border-radius: 0.7cm;
-    font-size: 17px;
-  }
-
-  .nav li {
-    display: inline-flex;
-    font-size: 20px;
-    user-select: none;
-    text-align: center;
-    padding: 25px;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin: center;
-    vertical-align: middle;
-  }
-
-  img.Image-showoff-left {
-    margin: left;
-    margin-top: 40px;
-    border-radius: 0.7cm;
-  }
-
-  img.Image-card {
-    margin: left;
-    margin-top: 30px;
-    border-radius: 0.7cm;
-  }
-
-  img.Image-showoff-right {
-    margin: right;
-    margin-top: 40px;
-    border-radius: 0.7cm;
-  }
-
-
-  p.text-showoff-right {
-    text-align: center;
-    font-family: 'Titillium web';
-    font-size: 23px;
-    color: white;
-  }
-
-  .showoff-left li {
-    display: inline;
-    margin: auto;
-  }
-
-  div.text-showoff-right {
-    text-align: center;
-    font-family: 'Titillium web';
-    font-size: 23px;
-    color: white;
-  }
-
-  div.text-showoff-left {
-    text-align: center;
-    font-family: 'Titillium web';
-    font-size: 23px;
-    color: white;
-  }
-
-  @media only screen and (min-width: 1032px) {
-    .nav {
-      display: flex;
-    }
-  }
-
-  a {
-    color: #2F56B0;
-    position: relative;
-    text-decoration: none;
-    transition: color .4s ease-out;
-  }
-
-  a:hover {
-    color: #457DFB;
-    right: 0;
-    text-decoration: none;
-  }
-
-  a:hover:after {
-    border-color: #457DFB;
-    right: 0;
-  }
-
-  a:after {
-    border-radius: 1em;
-    border-top: .1em solid #2F56B0;
-    content: "";
-    position: absolute;
-    right: 100%;
-    bottom: .14em;
-    left: 0;
-    transition: right .4s cubic-bezier(0, .5, 0, 1),
-      border-color .4s ease-out;
-  }
-
-  a:hover:after {
-    animation: anchor-underline 2s cubic-bezier(0, .5, 0, 1) infinite;
-    border-color: #457DFB;
-  }
-
-  
-
-  @keyframes anchor-underline {
-
-    0%,
-    10% {
-      left: 0;
-      right: 100%;
-    }
-
-    40%,
-    60% {
-      left: 0;
-      right: 0;
-    }
-
-    90%,
-    100% {
-      left: 100%;
-      right: 0;
-    }
-  }
-</style>
 
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -403,12 +115,14 @@
     <a href='https://discord.com/oauth2/authorize?client_id=752105298789007472&scope=bot&permissions=1479878742'
       target="_blank">
       <button class="button is-primary is-rounded is-centered is-link"
-        style="display: flex; margin: 0 auto; align-items: center; margin-top: 1.3cm; width: 10cm;">Invite Me</button>
+        style="display: flex; margin: 0 auto; align-items: center; margin-top: 1.3cm; margin-left: auto; margin-right: auto; width: 10cm;">Invite
+        Me</button>
     </a>
 
     <a href='https://top.gg/bot/752105298789007472/' target="_blank">
       <button class="button is-primary is-rounded is-centered is-info"
-        style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">View on
+        style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; margin-left: auto; margin-right: auto; width: 10cm;">View
+        on
         Top.GG</button>
     </a>
 
@@ -419,71 +133,33 @@
 
     <ul class="nav">
       <li>
-        <div class="box">
-          <article class="media">
-            <div class="media-left">
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                <p class="menu-menu"> No hidden payments </p>
-                All the features provided by this bot are free of charge
-                </p>
-              </div>
-            </div>
-          </article>
+        <div class="feature-box">
+          <p class="feature-title"> No hidden payment </p>
+          <p class="feature-contents"> Play your favourite music with this bot. It can search playlist and music on
+            youtube without you give the link too! </p>
         </div>
       </li>
 
       <li>
-        <div class="box">
-          <article class="media">
-            <div class="media-left">
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                <p class="menu-menu"> Easy to use </p>
-                You don't need to bother configuring multiple setups.
-                </p>
-              </div>
-            </div>
-          </article>
+        <div class="feature-box">
+          <p class="feature-title"> Easy to use </p>
+          <p class="feature-contents"> You don't need to bother configuring multiple setups. </p>
         </div>
       </li>
 
       <li>
-        <div class="box">
-          <article class="media">
-            <div class="media-left">
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                <p class="menu-menu"> Responsive </p>
-                You don't need to wait for 1 century to get respond.
-                </p>
-              </div>
-            </div>
-          </article>
+        <div class="feature-box">
+          <p class="feature-title"> Responsive </p>
+          <p class="feature-contents"> You don't need to wait for 1 century to get respond. </p>
         </div>
       </li>
 
       <li>
-        <div class="box">
-          <article class="media">
-            <div class="media-left">
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                <p class="menu-menu"> In development stage </p>
-                This bot will have a lot of new commands in the future.
-                <em style="font-size: 14px;">Developer's commands target is 300, and more</em>
-                </p>
-              </div>
-            </div>
-          </article>
+        <div class="feature-box">
+          <p class="feature-title"> In development stage </p>
+          <p class="feature-contents"> This bot will have a lot of new commands in the future.
+            <em style="font-size: 14px;">Developer's commands target is 300, and more</em>
+          </p>
         </div>
       </li>
 
@@ -585,42 +261,48 @@
 
   <ul class="nav">
     <li>
+      <a href="commands.html">
       <div class="my-box">
         <p class="inside-box-text"> Image Gen </p>
         <hr>
         <p class="category-explanation"> Want to re-generate your Avatar or Attachments with filter? We have 69+ Image
           generator commands available for you </p>
         <div class="Image-showoff-left">
-          <img class="Image-card" src='Properties/Images/ChilledChino-RIP.png' alt="Magik-command" width="540"
-            height="240" />
+          <img class="Image-card" src='Properties/Images/ChilledChino-RIP.png' alt="Magik-command" width="95%"
+            height="95%" />
         </div>
       </div>
+      </a>
     </li>
 
     <li>
+      <a href="commands.html">
       <div class="my-box">
         <p class="inside-box-text"> Anime </p>
         <hr>
         <p class="category-explanation"> Ay weebs! We have 10+ Anime Commands for you. Such as character, getanime,
           getmanga, and other! </p>
         <div class="Image-showoff-left">
-          <img class="Image-card" src='Properties/Images/ChilledChino-Character.png' alt="Character-command" width="540"
-            height="240" />
+          <img class="Image-card" src='Properties/Images/ChilledChino-Character.png' alt="Character-command" width="95%"
+            height="95%" />
         </div>
       </div>
+    </a>
     </li>
 
     <li>
+      <a href="commands.html">
       <div class="my-box">
         <p class="inside-box-text"> Fun </p>
         <hr>
         <p class="category-explanation"> This is ASCII command. We give you 20+ fun commands so you didn't bored in your
           server such as 8Ball, Simprate, and other </p>
         <div class="Image-showoff-left">
-          <img class="Image-card" src='Properties/Images/ChilledChino-ASCII.png' alt="ASCII-command" width="540"
-            height="240" />
+          <img class="Image-card" src='Properties/Images/ChilledChino-ASCII.png' alt="ASCII-command" width="95%"
+            height="95%" />
         </div>
       </div>
+    </a>
     </li>
 
 
@@ -628,43 +310,49 @@
 
   <ul class="nav">
     <li>
+      <a href="commands.html">
       <div class="my-box">
         <p class="inside-box-text"> Games </p>
         <hr>
         <p class="category-explanation"> Play with your friends so you don't get bored with General chat on the server.
           We provide 3 multiplayer games and 1 singleplayer game </p>
         <div class="Image-showoff-left">
-          <img class="Image-card" src='Properties/Images/Discord-TicTacToe.png' alt="TicTacToe-command" width="540"
-            height="240" />
+          <img class="Image-card" src='Properties/Images/Discord-TicTacToe.png' alt="TicTacToe-command" width="95%"
+            height="95%" />
         </div>
       </div>
+    </a>
     </li>
 
     <li>
+      <a href="commands.html">
       <div class="my-box">
         <p class="inside-box-text"> Admin </p>
         <hr>
         <p class="category-explanation"> Someone caused trouble on your server? You can click or ban him to stop causing
           trouble. You can manage servers such as slowmode, addrole, and others </p>
         <div class="Image-showoff-left">
-          <img class="Image-card" src='Properties/Images/ChilledChino-Kick.png' alt="Kick-command" width="540"
-            height="240" />
+          <img class="Image-card" src='Properties/Images/ChilledChino-Kick.png' alt="Kick-command" width="95%"
+            height="95%" />
         </div>
       </div>
+    </a>
     </li>
 
     <li>
+      <a href="commands.html">
       <div class="my-box">
         <p class="inside-box-text"> Information </p>
         <hr>
         <p class="category-explanation"> An example of this command is safeurl. This will tell you whether a link is
-          safe or not. Powered by <a href="https://safebrowsing.google.com/" target="_blank">google safe browsing</a>.
+          safe or not. Powered by google safe browsing.
           We provide 40+ command information </p>
         <div class="Image-showoff-left">
-          <img class="Image-card" src='Properties/Images/ChilledChino-SafeUrl.png' alt="SafeURL-command" width="540"
-            height="240" />
+          <img class="Image-card" src='Properties/Images/ChilledChino-SafeUrl.png' alt="SafeURL-command" width="95%"
+            height="95%" />
         </div>
       </div>
+    </a>
     </li>
 
 
@@ -672,41 +360,47 @@
 
   <ul class="nav">
     <li>
+      <a href="commands.html">
       <div class="my-box">
         <p class="inside-box-text"> Music </p>
         <hr>
         <p class="category-explanation"> Play your favourite music with this bot. It can search playlist and music on
           youtube without you give the link too! </p>
         <div class="Image-showoff-left">
-          <img class="Image-card" src='Properties/Images/ChilledChino-Music.png' alt="Translate-command" width="540"
-            height="240" />
+          <img class="Image-card" src='Properties/Images/ChilledChino-Music.png' alt="Translate-command" width="95%"
+            height="95%" />
         </div>
       </div>
+    </a>
     </li>
 
     <li>
+      <a href="commands.html">
       <div class="my-box">
         <p class="inside-box-text"> Nasa </p>
         <hr>
         <p class="category-explanation"> You love Space? We give you 5+ NASA Commands for Space lover that want more
           informations about Mars and Astronomic Photo of The Day </p>
         <div class="Image-showoff-left">
-          <img class="Image-card" src='Properties/Images/ChilledChino-NasaAPOD.png' alt="APOD-command" width="540"
-            height="240" />
+          <img class="Image-card" src='Properties/Images/ChilledChino-nasaAPOD.png' alt="APOD-command" width="95%"
+            height="95%" />
         </div>
       </div>
+    </a>
     </li>
 
     <li>
+      <a href="commands.html">
       <div class="my-box">
         <p class="inside-box-text"> Bot </p>
         <hr>
         <p class="category-explanation"> And, you can invite me to your friends so they can enjoy this bot too! </p>
         <div class="Image-showoff-left">
-          <img class="Image-card" src='Properties/Images/ChilledChino-Invite.png' alt="Invite-command" width="540"
-            height="240" />
+          <img class="Image-card" src='Properties/Images/ChilledChino-Invite.png' alt="Invite-command" width="95%"
+            height="95%" />
         </div>
       </div>
+    </a>
     </li>
 
 
@@ -715,7 +409,8 @@
   <p class="feature-text"> Other Information </p>
   <hr>
 
-  <a href="https://top.gg/bot/752105298789007472" target="_blank" style="width: min-content; height: min-content; margin-top: 2cm;">
+  <a href="https://top.gg/bot/752105298789007472" target="_blank"
+    style="width: min-content; height: min-content; margin-top: 2cm;">
     <img src="https://top.gg/api/widget/752105298789007472.svg"
       style="margin-left: auto; margin-right: auto; display: block;" alt="ChilledChino" />
   </a>
@@ -749,7 +444,8 @@
             <ul>
               <a href='dashboard.html'>
                 <button class="button is-primary is-inverted is-outlined is-centered is-info"
-                  style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Main Page</button>
+                  style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Main
+                  Page</button>
               </a>
               <a href='commands.html'>
                 <button class="button is-primary is-inverted is-outlined is-centered is-info"
@@ -781,7 +477,8 @@
               </a>
               <a href='https://top.gg/bot/752105298789007472/vote' target="_blank">
                 <button class="button is-primary is-inverted is-outlined is-centered is-info"
-                  style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Vote on Top.GG</button>
+                  style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Vote on
+                  Top.GG</button>
               </a>
             </ul>
           </div>
