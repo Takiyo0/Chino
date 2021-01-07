@@ -31,7 +31,7 @@
 
   footer {
     background-color: #99aab5;
-    min-height: 156pt;
+    height: 50%;
     text-align: center;
     position: relative;
   }
@@ -75,10 +75,6 @@
     font-family: 'Ubuntu';
     font-size: 30px;
     color: whitesmoke;
-  }
-
-  footer {
-    height: 8cm;
   }
 
   p.feature {
@@ -144,6 +140,7 @@
     font-size: 14px;
     color: white;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   a.avatar {
