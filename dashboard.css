@@ -77,6 +77,10 @@
     color: whitesmoke;
   }
 
+  footer {
+    height: 8cm;
+  }
+
   p.feature {
     text-align: center;
     font-family: 'Source Sans Pro';
@@ -132,6 +136,14 @@
     font-size: 37px;
     color: white;
     margin-top: 21px;
+  }
+
+  p.footer-in-footer {
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
   }
 
   a.avatar {
