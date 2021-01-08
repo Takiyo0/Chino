@@ -20,165 +20,10 @@
         type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="commands.css" rel="stylesheet">
+    <link href="commands.scss" rel="stylesheet">
 </head>
-<style>
-    #container {
-        width: inherit;
-        height: inherit;
-        margin: 0;
-        padding: 0;
-        background-color: pink;
-    }
 
-    html,
-    body {
-        user-select: none;
-        animation-name: seizures;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
-        animation-duration: 10s;
-    }
-
-    @keyframes seizures {
-        0% {
-            background-color: #333;
-        }
-
-        50% {
-            background-color: #111;
-        }
-
-        100% {
-            background-color: #333;
-        }
-    }
-
-    footer {
-        background-color: #99aab5;
-        min-height: 156pt;
-        text-align: center;
-        position: relative;
-        margin-top: 18cm;
-    }
-
-    h5.Footer-Title {
-        text-align: center;
-        font-family: 'Ubuntu';
-        font-size: 30px;
-        color: whitesmoke;
-    }
-
-
-
-    .nav li {
-        display: inline-flex;
-        font-size: 20px;
-        user-select: none;
-        text-align: center;
-        padding: 25px;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
-        margin: center;
-        vertical-align: middle;
-    }
-
-
-    @media only screen and (min-width: 1032px) {
-        .nav {
-            display: flex;
-        }
-    }
-
-    p.html-error {
-        text-align: center;
-        font-family: 'Pacifico';
-        font-size: 210px;
-        color: whitesmoke;
-        margin-top: 2cm;
-    }
-
-    p.page-not-found {
-        text-align: center;
-        font-family: 'Arimo';
-        font-size: 40px;
-        color: whitesmoke;
-        margin-top: 0.5cm;
-    }
-
-    p.back {
-        text-align: center;
-        font-family: 'Arimo';
-        font-size: 20px;
-        color: whitesmoke;
-        margin-top: 0.5cm;
-    }
-
-    p.lmaoo {
-        text-align: center;
-        font-family: 'Arimo';
-        font-size: 10px;
-        color: whitesmoke;
-        margin-top: 0.5cm;
-    }
-
-
-    a {
-        color: #2F56B0;
-        position: relative;
-        text-decoration: none;
-        transition: color .4s ease-out;
-    }
-
-    a:hover {
-        color: #457DFB;
-        right: 0;
-        text-decoration: none;
-    }
-
-    a:hover:after {
-        border-color: #457DFB;
-        right: 0;
-    }
-
-    a:after {
-        border-radius: 1em;
-        border-top: .1em solid #2F56B0;
-        content: "";
-        position: absolute;
-        right: 100%;
-        bottom: .14em;
-        left: 0;
-        transition: right .4s cubic-bezier(0, .5, 0, 1),
-            border-color .4s ease-out;
-    }
-
-    a:hover:after {
-        animation: anchor-underline 2s cubic-bezier(0, .5, 0, 1) infinite;
-        border-color: #457DFB;
-    }
-
-    @keyframes anchor-underline {
-
-        0%,
-        10% {
-            left: 0;
-            right: 100%;
-        }
-
-        40%,
-        60% {
-            left: 0;
-            right: 0;
-        }
-
-        90%,
-        100% {
-            left: 100%;
-            right: 0;
-        }
-    }
-</style>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
@@ -256,13 +101,1515 @@
 </nav>
 
 <body>
-    <p class="html-error"> 404 </p>
-    <p class="page-not-found"> Page not Found </p>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <p class="back"> 
-        <a href="dashboard.html">Back Home</a> | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Other</a> </p>
+    <p class="command-list-name"> Commands List </p>
 
-        <p class="lmaoo"> Eh, This page actually exists, but I'm still working on it lmao </p>
+    <ul class="nav">
+        <li>
+            <a href='commands.html#administrator'>
+                <button class="button is-primary is-rounded is-centered is-link"
+                    style="display: flex; margin: 0 auto; align-items: center;   width: 100%;; ">Admin</button>
+            </a>
+        </li>
+        <li>
+            <a href='commands.html#anime'>
+                <button class="button is-primary is-rounded is-centered is-link"
+                    style="display: flex; margin: 0 auto; align-items: center;   width: 100%;; ">Anime</button>
+            </a>
+        </li>
+        <li>
+            <a href='commands.html#image-generator'>
+                <button class="button is-primary is-rounded is-centered is-link"
+                    style="display: flex; margin: 0 auto; align-items: center;   width: 100%; ">Image
+                    Generation</button>
+            </a>
+        </li>
+        <li>
+            <a href='commands.html#information'>
+                <button class="button is-primary is-rounded is-centered is-link"
+                    style="display: flex; margin: 0 auto; align-items: center;   width: 100%;; ">Information</button>
+            </a>
+        </li>
+        <li>
+            <a href='commands.html#games'>
+                <button class="button is-primary is-rounded is-link"
+                    style="display: flex; margin: 0 auto; align-items: center;   width: 100%;; ">Games</button>
+            </a>
+        </li>
+        <li>
+            <a href='commands.html#fun'>
+                <button class="button is-primary is-rounded is-centered is-link"
+                    style="display: flex; margin: 0 auto; align-items: center;   width: 100%;; ">Fun</button>
+            </a>
+        </li>
+        <li>
+            <a href='commands.html#music'>
+                <button class="button is-primary is-rounded is-centered is-link"
+                    style="display: flex; margin: 0 auto; align-items: center;   width: 100%;; ">Music</button>
+            </a>
+        </li>
+        <li>
+            <a href='commands.html#nasa'>
+                <button class="button is-primary is-rounded is-centered is-link"
+                    style="display: flex; margin: 0 auto; align-items: center;   width: 100%;; ">NASA</button>
+            </a>
+        </li>
+        <li>
+            <a href='commands.html#bot'>
+                <button class="button is-primary is-rounded is-centered is-link"
+                    style="display: flex; margin: 0 auto; align-items: center;   width: 100%;; ">Bot</button>
+            </a>
+        </li>
+    </ul>
+
+    <p class="search-name"> Search Here </p>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for commands"
+        title="Type in a command's name">
+
+    <ul id="myUL">
+        <li><a name='anime'>
+                <p class="category-name"> <img class="picture-logo" src="https://i.imgur.com/GVNnY21.png" alt="Anime">
+                    Anime </p>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> anilist </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> anime </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> bnha </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> character </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> chino </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> getanime </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> getmanga </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> rovi </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> waifu </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> yuna </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> zerotwo </p>
+                </div>
+            </a></li>
+
+        <li><a name='administrator'>
+                <p class="category-name"> <img class="picture-logo" src="https://i.imgur.com/40BnhEz.png"
+                        alt="Administrator"> Administrator </p>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> addrole </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> announce </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ban </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> config </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> dm </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> dump </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> echo </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ghostban </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> kick </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> prefix </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> purge </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> removerole </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> resetprefix </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> sayembed </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> setnick </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> slowmode </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> steal </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> unban </p>
+                </div>
+            </a></li>
+
+
+        <li><a name='fun'>
+                <p class="category-name"> <img class="picture-logo" src="https://i.imgur.com/yrW8IeK.png" alt="Fun"> Fun
+                </p>
+            </a></li>
+
+        <li><a>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> 8ball </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ascii </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> cat </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> cnjoke </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> dadjoke </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> emojify </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> fate </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> food </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> fox </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> gayrate </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> hug </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> insult </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> owo </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> pick </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> pp </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> rate </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> reverse </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> say </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> simprate </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> tts </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> uwu </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> vote </p>
+                </div>
+            </a></li>
+
+        <li><a name='games'>
+                <p class="category-name"> <img class="picture-logo" src="https://i.imgur.com/9W19I6Q.png" alt="Games">
+                    Games </p>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> aki </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> duelquiz </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> gunfights </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> tictactoe </p>
+                </div>
+            </a></li>
+
+        <li><a name='music'>
+                <p class="category-name"> <img class="picture-logo" src="https://i.imgur.com/XgqNpOz.png" alt="Music">
+                    Music </p>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> join </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> leave </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> loop </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> lyrics </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> lyrics2 </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> move </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> nowplaying </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> pause </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> play </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> playlist </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> queue </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> radio </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> remove </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> resume </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> search </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> shuffle </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> skip </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> skipto </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> stop </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> volume </p>
+                </div>
+            </a></li>
+
+
+        <li><a name='information'>
+                <p class="category-name"> <img class="picture-logo" src="https://i.imgur.com/wvyQCLQ.png"
+                        alt="informations"> Informations </p>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> advice </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> avatar </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> channelinfo </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> command </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> covid </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> currency </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> define </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> discord </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> documentation </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> duckduckgo </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> emoji </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> firstmessage </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> fortnite </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> genshin </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> gif </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> hastebin </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> http </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> imgur </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> inspiration </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> instagram </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> itunes </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> japanese </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> jisho </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> meme </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> morse </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> motivation </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> movie </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> npm </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> osu </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> roleinfo </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> safeurl </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> screenshot </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> serveravatar </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> serverinfo </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> snipe </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> spotify </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> steam </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> tih </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> translate </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> trend </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> userinfo </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> weather </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> wikipedia </p>
+                </div>
+            </a></li>
+
+        <li><a name='nasa'>
+                <p class="category-name"> <img class="picture-logo" src="https://i.imgur.com/ApDMtUW.png" alt="NASA">
+                    NASA </p>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> nasa-apod </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> nasa-asset </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> nasa-manifest </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> nasa-mars </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> nasa-search </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> nasa-sounds </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> nasa-stats </p>
+                </div>
+            </a></li>
+
+
+        <li><a name='bot'>
+                <p class="category-name"> <img class="picture-logo" src="https://i.imgur.com/HPqer7T.png" alt="bot"> Bot
+                </p>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> botavatar </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> botinfo </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> botlog </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> cpu </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> help </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> invite </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ping </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> report </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> stats </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> invite </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ping </p>
+                </div>
+            </a></li>
+
+
+        <li><a name='image-generator'>
+                <p class="category-name"> <img class="picture-logo" src="https://i.imgur.com/UVMURcx.png"
+                        alt="image-gen"> Image Generator </p>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> 3000years </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> achievement </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ad </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> affect </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> approved </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> awoo </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> baguette </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> beautiful </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> bed </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> blur </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> bobross </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> bonk </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> brazzers </p>
+                </div>
+            </a></li>
+
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> brightness </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> burn </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> calling </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> captcha </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> challenge </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> changemymind </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> circle </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> clyde </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> confusedstonk </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> continued </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> contrast </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> darkness </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> deepfry </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> delete </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> desaturate </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> didyoumean </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> distort </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> doublestonk </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> drake </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> facepalm </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> facts </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> fire </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> floor </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> frame </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> gay </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ghost </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> glitch </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> greyscale </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ifearnoman </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> invert </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> iphonex </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> jail </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> joke </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> jokeoverhead </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> jpeg </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> kanna </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> kiss </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> legal </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> magik </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> mission </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> mock </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> newspaper </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> notstonk </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ohno </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> opinion </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ph </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> pixelize </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> plankton </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> qrcode </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> rejected </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> resize </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> rip </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> salty </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> scary </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> sepia </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> shame </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> sharpen </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> ship </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> shit </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> slap </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> snow </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> spank </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> stonk </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> supreme </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> threats </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> trash </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> triggered </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> tweet </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> wanted </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> wasted </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> what </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> whowouldwin </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> wide </p>
+                </div>
+            </a></li>
+
+        <li><a>
+                <div class="feature-box">
+                    <p class="feature-contents"> youtube </p>
+                </div>
+            </a></li>
+
+
+    </ul>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 
@@ -281,16 +1628,16 @@
                         <ul>
                             <a href='dashboard.html'>
                                 <button class="button is-primary is-inverted is-outlined is-centered is-info"
-                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Main
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 6cm;">Main
                                     Page</button>
                             </a>
                             <a href='commands.html'>
                                 <button class="button is-primary is-inverted is-outlined is-centered is-info"
-                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Commands</button>
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 6cm;">Commands</button>
                             </a>
                             <a href='documentation.html'>
                                 <button class="button is-primary is-inverted is-outlined is-centered is-info"
-                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Documentation</button>
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 6cm;">Documentation</button>
                             </a>
                         </ul>
                     </div>
@@ -306,15 +1653,15 @@
                         <ul>
                             <a href='https://www.patreon.com/chinobot' target="_blank">
                                 <button class="button is-primary is-inverted is-outlined is-centered is-info"
-                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Patreon</button>
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 6cm;">Patreon</button>
                             </a>
                             <a href='https://saweria.co/chinobot' target="_blank">
                                 <button class="button is-primary is-inverted is-outlined is-centered is-info"
-                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Saweria</button>
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 6cm;">Saweria</button>
                             </a>
                             <a href='https://top.gg/bot/752105298789007472/vote' target="_blank">
                                 <button class="button is-primary is-inverted is-outlined is-centered is-info"
-                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 10cm;">Vote
+                                    style="display: flex; margin: 0 auto; align-items: center; margin-top: 0.3cm; width: 6cm;">Vote
                                     on Top.GG</button>
                             </a>
                         </ul>
