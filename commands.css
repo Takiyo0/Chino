@@ -15,6 +15,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease;
     animation-duration: 10s;
+    scroll-behavior: smooth;
 }
 
 @keyframes seizures {
